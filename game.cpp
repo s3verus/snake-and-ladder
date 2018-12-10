@@ -1,42 +1,50 @@
 #include <iostream>
-//#include <stdlib>
+#include <cstdlib>
+
 using namespace std;
-
+void chart(void);
 int main() {
+	int x;
 
-int cl;
-cout << "1.start" << '\n'<<"2.option"<<"\n"<<"3.help"<<"\n"<<"4.exit"<<"\n";
-cin >> cl;
+	cout << "1.start\n"
+		<< "2.option\n"
+		<< "3.load\n"
+		<< "4.help\n"
+		<< "5.about\n"
+		<< "6.exit\n";
+	cin >> x;
+/*
+	switch (x) {
+	case 1:
+		system("cls");
+		chart();
+		break;
+	case 2:
+		
+	}
+*/
 
-if(cl==1){
 
-//      stdlib::clrsrc();
-  //    cout << "*";
-      for(int x=1;x<=40;x++){
-          cout<<" *";
-      }
-  //    cout<<"\n";
-  //    cout << "*";
-      for(int i=1;i<=1;i++){
-          for(int i=1;i<=10;i++){
-              for(int j=1;j<=3;j++){
-                  for(int y=1;y<=10;y++){
-                      cout<<"       *";
-                  }
-  //                cout<<"\n";
-  //                cout << "*";
-              }
 
-          for(int x=1;x<=40;x++){
-              cout<<" *";
-          }
-          cout<<"\n";
-  //        cout << "*";
-          }
-      }
+	cin.get();
 
+	cin.get();
+	return 0;
 }
+void chart(void) {
+	for (int s = 1; s <= 10; ++s) {
+		for (int i = 0; i <= 40; ++i) {
+			cout << "* ";
+		}
+		cout << "\n";
+		for (int k = 1; k <= 3; ++k) {
+			for (int j = 1; j <= 5; ++j) {
+				cout << "*       *       ";
+			}cout << "*\n";
+		}
+	}
+	for (int i = 0; i <= 40; ++i) {
+		cout << "* ";
+	}
 
-cin.get();
-  return 0;
 }
