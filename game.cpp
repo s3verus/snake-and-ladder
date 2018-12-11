@@ -45,7 +45,8 @@ void about(void){
 				 <<"with some fun options included in the game \n"
 				 <<"and the game is gonig to be design by \n"
 				 <<"three-of-use from iran for the university's project. \n"
-				 << "           -HOPE YOU ENJOY IT-          \n";
+				 << "           -HOPE YOU ENJOY IT-          \n"<<".ali abdollahi\n .benyamin ghahremani\n .alireza salimi\n";
+	
 
 
 		cout << "\n99.back\n";
