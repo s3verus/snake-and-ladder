@@ -4,6 +4,7 @@
 using namespace std;
 
 int x;
+
 void menu(void);
 void chart(void);
 void about(void);
@@ -36,6 +37,7 @@ void chart(void) {
 	}
 
 }
+
 void back(void)
 {
 
