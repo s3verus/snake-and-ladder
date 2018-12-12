@@ -4,15 +4,14 @@
 using namespace std;
 
 int x;
-void st_menu(void);
+
+void menu(void);
 void chart(void);
 void about(void);
-
+void back(void);
 int main() {
 
-		st_menu();
-
-
+	menu();
 
 
 	cin.get();
@@ -39,29 +38,32 @@ void chart(void) {
 
 }
 
-void about(void){
-		cout <<"we dicided to design a game in cpp type \n"
-				 <<"and this is a game about a snake-and-ladder chart \n"
-				 <<"with some fun options included in the game \n"
-				 <<"and the game is gonig to be design by \n"
-				 <<"three-of-use from iran for the university's project. \n"
-				 << "           -HOPE YOU ENJOY IT-          \n"<<".ali abdollahi\n .benyamin ghahremani\n .alireza salimi\n";
-	
+void back(void)
+{
+
+	cout << "\n0.back\n";
+	int x;
+	cin >> x;
+	if (x == 0) {
+		system("cls");
+		menu();
+	}
+}
+void about(void) {
+	cout << "we dicided to design a game in cpp type \n"
+		<< "and this is a game about a snake-and-ladder chart \n"
+		<< "with some fun options included in the game \n"
+		<< "and the game is gonig to be design by \n"
+		<< "three-of-use (.Benyamin Ghahremani .Ali Abdollahi .Alireza Salimi)\n"
+		<< "from iran for the university's project. \n"
+		<< "           -HOPE YOU ENJOY IT-          \n";
 
 
-		cout << "\n99.back\n";
-		cin >> x;
-		switch (x) {
-			case 99:
-				system("cls");
+		back();
 
-				st_menu();
-
-				break;
-			}
 }
 
-void st_menu(void) {
+void menu(void) {
 	cout << "1.start\n"
 		<< "2.option\n"
 		<< "3.load\n"
@@ -71,30 +73,32 @@ void st_menu(void) {
 	cin >> x;
 
 	switch (x) {
-		case 1:
-			system("cls");
-			chart();
-			break;
-		case 2:
-			system("cls");
+	case 1:
+		system("cls");
+		chart();
 
-			break;
-		case 3:
-			system("cls");
+		break;
+	case 2:
+		system("cls");
 
-			break;
-		case 4:
-			system("cls");
+		break;
+	case 3:
+		system("cls");
 
-			break;
-		case 5:
-			system("cls");
-			about();
-			break;
-		case 6:
-			system("cls");
-			system("exit");
-			break;
+		break;
+	case 4:
+		system("cls");
+
+		break;
+	case 5:
+		system("cls");
+		about();
+		break;
+	case 6:
+	    exit(0);
+		break;
 	}
+
+	back();
 
 }
