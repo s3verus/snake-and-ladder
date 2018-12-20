@@ -30,7 +30,7 @@ void about(void);
 void back(void);
 
 int main() {
-
+	system("title snake and ladder");
 	menu();
 
 
